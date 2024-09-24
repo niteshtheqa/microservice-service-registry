@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: service-registry
-        image: nitesh2611/service-registry:04
+        image: nitesh2611/service-registry:10
         resources:
           limits:
             cpu: 200m
@@ -40,4 +40,4 @@ spec:
     - protocol: TCP
       port: 8761
       targetPort: 8761
-  type: NodePort    
+  type: LoadBalancer    
